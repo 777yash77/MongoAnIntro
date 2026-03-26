@@ -682,12 +682,26 @@ export default function Home() {
                         </p>
 
                         {selectedTopic.id === "setup" && index === 0 ? (
-                          <a
-                            href="https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-8.2.6-signed.msi"
-                            className="mt-4 inline-flex rounded-full bg-emerald-400 px-4 py-2 text-sm font-semibold text-black transition hover:bg-emerald-300"
-                          >
-                            Download MongoDB
-                          </a>
+                          <div className="mt-4 flex flex-wrap gap-3">
+                            <a
+                              href="https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-8.2.6-signed.msi"
+                              className="inline-flex rounded-full bg-emerald-400 px-4 py-2 text-sm font-semibold text-black transition hover:bg-emerald-300"
+                            >
+                              Download MongoDB
+                            </a>
+                            <a
+                              href="https://downloads.mongodb.com/compass/mongosh-2.8.1-win32-x64.zip"
+                              className="inline-flex rounded-full border border-emerald-400/50 px-4 py-2 text-sm font-semibold text-emerald-200 transition hover:border-emerald-300 hover:bg-emerald-400/10"
+                            >
+                              Download Mongosh
+                            </a>
+                            <a
+                              href="https://downloads.mongodb.com/compass/mongodb-compass-1.49.4-win32-x64.exe"
+                              className="inline-flex rounded-full border border-emerald-400/50 px-4 py-2 text-sm font-semibold text-emerald-200 transition hover:border-emerald-300 hover:bg-emerald-400/10"
+                            >
+                              Download Compass
+                            </a>
+                          </div>
                         ) : null}
 
                         <pre className="mt-4 overflow-x-auto rounded-2xl border border-emerald-400/15 bg-black/60 p-4 text-sm leading-6 text-emerald-300">
